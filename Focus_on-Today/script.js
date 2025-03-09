@@ -57,7 +57,7 @@ checkBoxList.forEach((checkBox) => {
 
       progressValue.style.width = `${completedGoalsCount * 100 / Object.values(allGoals).length}%`;
 
-      progressValue.firstElementChild.innerText = `${completedGoalsCount}/3 completed`;
+      progressValue.firstElementChild.innerText = `${completedGoalsCount}/${Object.values(allGoals).length} completed`;
 
       progressLabel.innerText = comments[completedGoalsCount];
 
